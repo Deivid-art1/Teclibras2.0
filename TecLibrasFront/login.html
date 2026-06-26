@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecLibras - Login</title>
+  <style>
+    :root {
+      --primary-color: #1a73e8;
+      --bg-color: #f8f9fa;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-card {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+    }
+    .login-card h1 {
+      color: var(--primary-color);
+      margin-bottom: 5px;
+      font-size: 32px;
+    }
+    .login-card p {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    .input-group input:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+    #btn-entrar-login {
+      width: 100%;
+      padding: 12px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 10px;
+    }
+    #btn-entrar-login:hover {
+      background-color: #1557b0;
+    }
+    .Dica {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #999;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-card">
+    <h1>TecLibras</h1>
+    <p>Acesse o painel de sinais</p>
+
+    <div class="input-group">
+      <label for="user">Usuário</label>
+      <input type="text" id="user" placeholder="Digite seu usuário">
+    </div>
+
+    <div class="input-group">
+      <label for="pass">Senha</label>
+      <input type="password" id="pass" placeholder="Digite sua senha">
+    </div>
+
+    <button id="btn-entrar-login">Entrar no Sistema</button>
+
+    <div class="Dica">
+      <strong>Professores:</strong> admin / admin<br>
+      <strong>Alunos:</strong> aluno / aluno
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
