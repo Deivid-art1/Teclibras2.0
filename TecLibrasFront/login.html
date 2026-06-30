@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecLibras - Painel de Acesso</title>
+  
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Urbanist -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- LINK PARA O SEU ARQUIVO CSS EXTERNO -->
+  <link rel="stylesheet" href="css/loginstyle.css">
+</head>
+<body>
+
+  <!-- Mensagem de Feedback Flutuante (Toast) -->
+  <div id="toast" class="toast-message">
+    <i class="fa-solid fa-circle-info" id="toast-icon"></i>
+    <span id="toast-text">Feedback do sistema</span>
+  </div>
+
+  <!-- CONTAINER DE LOGIN -->
+  <div class="login-card">
+    <div class="brand-glow"></div>
+    <h1>Tec<span>Libras</span></h1>
+    <p>Painel de Acessibilidade Digital</p>
+
+    <!-- Campo de Usuário -->
+    <div class="input-group">
+      <label for="user">Usuário</label>
+      <div class="input-wrapper">
+        <input type="text" id="user" placeholder="Digite seu usuário" autocomplete="off">
+        <i class="fa-solid fa-user input-icon"></i>
+      </div>
+    </div>
+
+    <!-- Campo de Senha -->
+    <div class="input-group">
+      <label for="pass">Senha</label>
+      <div class="input-wrapper">
+        <input type="password" id="pass" placeholder="Digite sua senha">
+        <i class="fa-solid fa-lock input-icon"></i>
+        <button type="button" class="toggle-password" id="btn-toggle-pass" title="Ver senha">
+          <i class="fa-solid fa-eye" id="eye-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Botão de Login -->
+    <button id="btn-entrar-login">
+      <span>Entrar no Sistema</span>
+      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+    </button>
+
+    <!-- Quadro de credenciais recomendadas -->
+    <div class="Dica">
+      <strong>Professores:</strong> admin / admin<br>
+      <strong>Alunos:</strong> aluno / aluno
+    </div>
+  </div>
+
+  <!-- Seu Script JS separado ou mantido aqui -->
+  <script src="js/login.js"></script>
+</body>
+</html>

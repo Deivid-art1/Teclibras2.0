@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>TecLibras - Painel do Professor</title>
+  <!-- Conexão com o arquivo CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <!--div style="font-size: 20px; cursor: pointer;">☰</div-->
+    
+    <h1 class="logo-title">TecLibras</h1>
+    
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Buscar sinal (ex: HTML, CSS...)" aria-label="Buscar sinal">
+      <button id="clear-search" class="clear-search-btn" title="Limpar busca" type="button">&times;</button>
+    </div>
+    
+    <div class="user-access">
+        <button id="theme-toggle" aria-label="Alternar modo escuro" type="button">🌙</button>
+        
+        <div class="user-icon" id="user-menu-btn" title="Login/Cadastro">👤</div>
+        
+        <div id="user-dropdown" class="user-dropdown">
+          
+          <div id="login-form-container">
+            <input type="text" id="login-user" placeholder="Usuário ou E-mail">
+            <input type="password" id="login-pass" placeholder="Senha">
+            <button id="btn-entrar">Entrar</button>
+          </div>
+          
+          <div id="logged-container" style="display: none;">
+            <p>Olá, <span id="username-display">Professor</span>!</p>
+            <button id="btn-sair">Sair</button>
+          </div>
+
+        </div>
+    </div>
+  </header>
+
+  <!-- Botões laterais -->
+  <aside class="sidebar">
+    <!-- div class="sidebar-tool" title="Categorias">📂</div> -->
+    <!-- div class="sidebar-tool" title="Opções">⚙️</div -->
+    <div class="sidebar-tool tool-upload" title="Upload de novo sinal">➕</div>
+  </aside>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>HTML</h2>
+      <div class="translation">
+        <img src="img/Html1.png">
+        <img src="img/Html2.png">
+      </div>
+      <video controls><source src="video/Html.mp4"></video>
+      <p>Sinal em Libras para "HTML"</p>
+    </div>
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>CSS</h2>
+      <div class="translation">
+        <img src="img/Css1.png">
+        <img src="img/Css2.png">
+      </div>
+      <video controls><source src="video/css.mp4"></video>
+      <p>Sinal em Libras para "CSS"</p>
+    </div>
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>JAVASCRIPT</h2>
+      <div class="translation">
+        <img src="img/JavaScript1.png">
+        <img src="img/JavaScript2.png">
+      </div>
+      <video controls><source src="video/Js.mp4"></video>
+      <p>Sinal em Libras para "JAVASCRIPT"</p>
+    </div>
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>PHP</h2>
+      <div class="translation"><img src="img/PHP.png"></div>
+      <video controls><source src="video/Php.mp4"></video>
+      <p>Sinal em Libras para "PHP"</p>
+    </div>
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>MYSQL</h2>
+      <div class="translation"><img src="img/MySql.png"></div>
+      <video controls><source src="video/Mysql.mp4"></video>
+      <p>Sinal em Libras para "MYSQL"</p>
+    </div>
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>PYTHON</h2>
+      <div class="translation"><img src="img/Python.png"></div>
+      <video controls><source src="video/Python.mp4"></video>
+      <p>Sinal em Libras para "PYTHON"</p>
+    </div>
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>JAVA</h2>
+      <div class="translation">
+        <img src="img/Java1.png">
+        <img src="img/Java1.png"> 
+      </div>
+      <video controls><source src="video/Java.mp4"></video>
+      <p>Sinal em Libras para "JAVA"</p>
+    </div>
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>C Sharp</h2>
+      <div class="translation">
+        <img src="img/C Sharp1.png">
+        <img src="img/C Sharp2.png">
+      </div>
+      <video controls><source src="video/C Sharp.mp4"></video>
+      <p>Sinal em Libras para "C Sharp"</p>
+    </div>
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>VISUAL STUDIO</h2>
+      <div class="translation">
+        <img src="img/VS1.png">
+        <img src="img/VS2.png">
+      </div>
+      <video controls><source src="video/vs.mp4"></video>
+      <p>Sinal em Libras para "VISUAL STUDIO"</p>
+    </div>
+
+    <div class="card">
+      <div class="acoes-card">
+        <button class="btn-edit" title="Editar">✏️</button>
+        <button class="btn-delete" title="Excluir">🗑️</button>
+      </div>
+      <h2>BOOTSTRAP</h2>
+      <div class="translation">
+        <img src="img/Boot1.png">
+        <img src="img/Boot2.png">
+      </div>
+      <video controls><source src="video/Boot.mp4"></video>
+      <p>Sinal em Libras para "BOOTSTRAP"</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 TecLibras - Painel Administrativo</p>
+  </footer>
+
+  <div id="modal-upload" class="modal">
+    <div class="modal-content">
+      <h2>Cadastrar Novo Sinal</h2>
+
+      <label>Termo TI</label>
+      <input type="text" id="termo_ti">
+
+      <label>Descrição do Sinal</label>
+      <textarea id="descricao_sinal"></textarea>
+
+      <label>ID do Intérprete</label>
+      <input type="number" id="id_interprete">
+
+      <label>Data da Publicação</label>
+      <input type="date" id="data_publicacao">
+
+      <h3>Mídia</h3>
+
+      <label>Tipo da Mídia</label>
+      <select id="tipo_midia">
+        <option value="imagem">Imagem</option>
+        <option value="video">Vídeo</option>
+        <option value="gif">GIF</option>
+      </select>
+
+      <label>Upload do Arquivo</label>
+      <input type="file" id="url_arquivo">
+
+      <label>Formato</label>
+      <input type="text" id="formato" placeholder="jpg, png, mp4...">
+
+      <div class="modal-buttons">
+        <button id="salvar-sinal">Salvar</button>
+        <button id="fechar-modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conexão com o arquivo JavaScript externo -->
+  <script src="js/script.js"></script>
+
+ <!-- Aumento da imagem ao toque --> 
+<div id="lightbox-modal" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" alt="Sinal em tamanho grande">
+</div>
+
+</body>
+</html>
