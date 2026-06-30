@@ -3,111 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TecLibras - Login</title>
-  <style>
-    :root {
-      --primary-color: #1a73e8;
-      --bg-color: #f8f9fa;
-    }
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background-color: var(--bg-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .login-card {
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      width: 100%;
-      max-width: 360px;
-      text-align: center;
-    }
-    .login-card h1 {
-      color: var(--primary-color);
-      margin-bottom: 5px;
-      font-size: 32px;
-    }
-    .login-card p {
-      color: #666;
-      margin-bottom: 30px;
-      font-size: 14px;
-    }
-    .input-group {
-      margin-bottom: 15px;
-      text-align: left;
-    }
-    .input-group label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-      font-size: 14px;
-      color: #333;
-    }
-    .input-group input {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-sizing: border-box;
-      font-size: 14px;
-    }
-    .input-group input:focus {
-      outline: none;
-      border-color: var(--primary-color);
-    }
-    #btn-entrar-login {
-      width: 100%;
-      padding: 12px;
-      background-color: var(--primary-color);
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.2s;
-      margin-top: 10px;
-    }
-    #btn-entrar-login:hover {
-      background-color: #1557b0;
-    }
-    .Dica {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #999;
-      line-height: 1.4;
-    }
-  </style>
+  <title>TecLibras - Painel de Acesso</title>
+  
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Urbanist -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- LINK PARA O SEU ARQUIVO CSS EXTERNO -->
+  <link rel="stylesheet" href="css/loginstyle.css">
 </head>
 <body>
 
-  <div class="login-card">
-    <h1>TecLibras</h1>
-    <p>Acesse o painel de sinais</p>
+  <!-- Mensagem de Feedback Flutuante (Toast) -->
+  <div id="toast" class="toast-message">
+    <i class="fa-solid fa-circle-info" id="toast-icon"></i>
+    <span id="toast-text">Feedback do sistema</span>
+  </div>
 
+  <!-- CONTAINER DE LOGIN -->
+  <div class="login-card">
+    <div class="brand-glow"></div>
+    <h1>Tec<span>Libras</span></h1>
+    <p>Painel de Acessibilidade Digital</p>
+
+    <!-- Campo de Usuário -->
     <div class="input-group">
       <label for="user">Usuário</label>
-      <input type="text" id="user" placeholder="Digite seu usuário">
+      <div class="input-wrapper">
+        <input type="text" id="user" placeholder="Digite seu usuário" autocomplete="off">
+        <i class="fa-solid fa-user input-icon"></i>
+      </div>
     </div>
 
+    <!-- Campo de Senha -->
     <div class="input-group">
       <label for="pass">Senha</label>
-      <input type="password" id="pass" placeholder="Digite sua senha">
+      <div class="input-wrapper">
+        <input type="password" id="pass" placeholder="Digite sua senha">
+        <i class="fa-solid fa-lock input-icon"></i>
+        <button type="button" class="toggle-password" id="btn-toggle-pass" title="Ver senha">
+          <i class="fa-solid fa-eye" id="eye-icon"></i>
+        </button>
+      </div>
     </div>
 
-    <button id="btn-entrar-login">Entrar no Sistema</button>
+    <!-- Botão de Login -->
+    <button id="btn-entrar-login">
+      <span>Entrar no Sistema</span>
+      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+    </button>
 
+    <!-- Quadro de credenciais recomendadas -->
     <div class="Dica">
       <strong>Professores:</strong> admin / admin<br>
       <strong>Alunos:</strong> aluno / aluno
     </div>
   </div>
 
+  <!-- Seu Script JS separado ou mantido aqui -->
   <script src="js/login.js"></script>
 </body>
 </html>
